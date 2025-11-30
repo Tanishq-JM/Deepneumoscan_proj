@@ -1,6 +1,6 @@
 <div align="center">
 
-#  DeepNeumoScan
+# DeepNeumoScan
 
 ### AI-Powered Pneumonia Detection & Health Assessment Platform
 
@@ -79,7 +79,7 @@
 ### System Architecture Diagram
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#FFB6C1', 'primaryTextColor': '#333', 'primaryBorderColor': '#FF69B4', 'lineColor': '#DDA0DD', 'secondaryColor': '#E6E6FA', 'tertiaryColor': '#F0FFF0'}}}%%
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1e40af', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#3b82f6', 'lineColor': '#6366f1', 'secondaryColor': '#059669', 'tertiaryColor': '#7c3aed'}}}%%
 flowchart TB
         subgraph CLIENT["CLIENT LAYER"]
                 direction TB
@@ -134,18 +134,18 @@ flowchart TB
         SERVER --> STORAGE
         FEATURES --> AI
 
-        style CLIENT fill:#FFB6C1,stroke:#FF69B4,stroke-width:3px,color:#333
-        style FEATURES fill:#E6E6FA,stroke:#DDA0DD,stroke-width:3px,color:#333
-        style CONTEXT fill:#B0E0E6,stroke:#87CEEB,stroke-width:3px,color:#333
-        style SERVER fill:#98FB98,stroke:#90EE90,stroke-width:3px,color:#333
-        style STORAGE fill:#FAFAD2,stroke:#F0E68C,stroke-width:3px,color:#333
-        style AI fill:#DDA0DD,stroke:#DA70D6,stroke-width:3px,color:#333
+        style CLIENT fill:#1e40af,stroke:#3b82f6,stroke-width:3px,color:#ffffff
+        style FEATURES fill:#059669,stroke:#10b981,stroke-width:3px,color:#ffffff
+        style CONTEXT fill:#7c3aed,stroke:#8b5cf6,stroke-width:3px,color:#ffffff
+        style SERVER fill:#ea580c,stroke:#f97316,stroke-width:3px,color:#ffffff
+        style STORAGE fill:#0d9488,stroke:#14b8a6,stroke-width:3px,color:#ffffff
+        style AI fill:#e11d48,stroke:#f43f5e,stroke-width:3px,color:#ffffff
 ```
 
 ### Data Flow Diagram
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#98FB98', 'primaryTextColor': '#333', 'lineColor': '#FFB6C1', 'actorBkg': '#E6E6FA', 'actorBorder': '#DDA0DD', 'signalColor': '#FFB6C1'}}}%%
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#4338ca', 'primaryTextColor': '#ffffff', 'lineColor': '#a855f7', 'actorBkg': '#1e40af', 'actorBorder': '#3b82f6', 'signalColor': '#06b6d4'}}}%%
 sequenceDiagram
         autonumber
         participant U as User
@@ -155,7 +155,7 @@ sequenceDiagram
         participant D as JSON Database
         participant AI as AI Engine
 
-        rect rgb(255, 182, 193, 0.2)
+        rect rgb(30, 64, 175, 0.3)
                 Note over U,D: Authentication Flow
                 U->>F: Login/Signup Request
                 F->>B: POST /api/auth/login
@@ -165,7 +165,7 @@ sequenceDiagram
                 F->>F: Store in LocalStorage
         end
 
-        rect rgb(230, 230, 250, 0.3)
+        rect rgb(5, 150, 105, 0.3)
                 Note over U,AI: Assessment Flow
                 U->>F: Complete Assessment Wizard
                 F->>A: Request + JWT Token
@@ -179,7 +179,7 @@ sequenceDiagram
                 F-->>U: Display Results
         end
 
-        rect rgb(176, 224, 230, 0.3)
+        rect rgb(225, 29, 72, 0.3)
                 Note over U,AI: X-Ray Analysis Flow
                 U->>F: Upload X-Ray Image
                 F->>B: POST /api/xray/upload
@@ -195,7 +195,7 @@ sequenceDiagram
 ### Authentication Flow
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#FAFAD2', 'primaryTextColor': '#333', 'lineColor': '#FFB6C1'}}}%%
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#d97706', 'primaryTextColor': '#ffffff', 'lineColor': '#f59e0b'}}}%%
 flowchart LR
         subgraph LOGIN["Login Process"]
                 A["Enter Email"] --> B["Enter Password"]
@@ -217,8 +217,8 @@ flowchart LR
 
         LOGIN --> PROTECTED
 
-        style LOGIN fill:#FFE4E1,stroke:#FFB6C1,stroke-width:3px,color:#333
-        style PROTECTED fill:#E0FFFF,stroke:#B0E0E6,stroke-width:3px,color:#333
+        style LOGIN fill:#7c3aed,stroke:#8b5cf6,stroke-width:3px,color:#ffffff
+        style PROTECTED fill:#059669,stroke:#10b981,stroke-width:3px,color:#ffffff
 ```
 
 ---
@@ -341,7 +341,7 @@ Password: password123
 ### 1. Getting Started
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#FFB6C1', 'lineColor': '#DDA0DD'}}}%%
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1e40af', 'lineColor': '#6366f1'}}}%%
 flowchart LR
         A["Home Page"] --> B{"Logged In?"}
         B -->|No| C["Login/Signup"]
@@ -349,11 +349,11 @@ flowchart LR
         C --> D
         D --> E["Choose Feature"]
         
-        style A fill:#FFB6C1,stroke:#FF69B4,stroke-width:2px,color:#333
-        style B fill:#E6E6FA,stroke:#DDA0DD,stroke-width:2px,color:#333
-        style C fill:#B0E0E6,stroke:#87CEEB,stroke-width:2px,color:#333
-        style D fill:#98FB98,stroke:#90EE90,stroke-width:2px,color:#333
-        style E fill:#FAFAD2,stroke:#F0E68C,stroke-width:2px,color:#333
+        style A fill:#1e40af,stroke:#3b82f6,stroke-width:2px,color:#ffffff
+        style B fill:#7c3aed,stroke:#8b5cf6,stroke-width:2px,color:#ffffff
+        style C fill:#059669,stroke:#10b981,stroke-width:2px,color:#ffffff
+        style D fill:#ea580c,stroke:#f97316,stroke-width:2px,color:#ffffff
+        style E fill:#e11d48,stroke:#f43f5e,stroke-width:2px,color:#ffffff
 ```
 
 ### 2. Self-Assessment Flow
