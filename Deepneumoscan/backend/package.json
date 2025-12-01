@@ -1,7 +1,6 @@
 {
   "name": "deepneumoscan-backend",
   "version": "1.0.0",
-  "type": "module",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only server.ts",
     "build": "tsc",
@@ -12,7 +11,6 @@
     "dotenv": "^16.6.1",
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.20.1",
     "multer": "^1.4.5-lts.1"
   },
   "devDependencies": {
