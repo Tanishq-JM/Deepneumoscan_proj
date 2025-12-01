@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
-import { LanguageProvider } from './components/LanguageToggle';
+import { LanguageProvider } from './context/LanguageContext';
 import { ProtectedRoute } from './components/ProtectedRoute';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
@@ -10,6 +10,12 @@ import { XRayScan } from './pages/XRayScan';
 import { CuringAssessment } from './pages/CuringAssessment';
 import { HospitalTracker } from './pages/HospitalTracker';
 import History from './pages/History';
+import { useAuth } from './hooks/useAuth';
+
+const RootRedirect = () => {
+  const { user } = useAuth();
+  return <Navigate to={user ? '/home' : '/login'} replace />;
+};
 
 function App() {
   return (
@@ -17,7 +23,7 @@ function App() {
       <LanguageProvider>
         <AuthProvider>
           <Routes>
-            <Route path="/" element={<Navigate to="/login" replace />} />
+            <Route path="/" element={<RootRedirect />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route
