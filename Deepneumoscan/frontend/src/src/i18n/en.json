@@ -1,0 +1,94 @@
+{
+  "nav": {
+    "home": "Home",
+    "selfAssessment": "Self Assessment",
+    "xrayScan": "Chest X-Ray Scan",
+    "curingAssessment": "Curing Assessment",
+    "hospitalTracker": "Hospital Tracker",
+    "history": "History",
+    "logout": "Logout"
+  },
+  "auth": {
+    "login": "Login",
+    "signup": "Sign Up",
+    "email": "Email",
+    "password": "Password",
+    "username": "Username",
+    "loginTitle": "Login to DeepNeumoScan",
+    "signupTitle": "Create Account",
+    "noAccount": "Don't have an account?",
+    "haveAccount": "Already have an account?",
+    "loginButton": "Login",
+    "signupButton": "Sign Up"
+  },
+  "home": {
+    "welcome": "Welcome",
+    "title": "DeepNeumoScan",
+    "subtitle": "AI-Powered Pneumonia Detection & Assessment",
+    "description": "Your comprehensive platform for early pneumonia detection and tracking"
+  },
+  "selfAssessment": {
+    "title": "Pneumonia Self-Assessment",
+    "subtitle": "Answer the following questions about your symptoms",
+    "submit": "Submit Assessment",
+    "results": "Assessment Results",
+    "riskLevel": "Risk Level",
+    "low": "Low Risk",
+    "moderate": "Moderate Risk",
+    "high": "High Risk",
+    "score": "Score"
+  },
+  "xrayScan": {
+    "title": "Chest X-Ray Scan Analysis",
+    "subtitle": "Upload your chest X-Ray for AI-powered analysis",
+    "upload": "Upload X-Ray (JPEG only)",
+    "age": "Age",
+    "gender": "Gender",
+    "male": "Male",
+    "female": "Female",
+    "other": "Other",
+    "smoking": "Smoking History",
+    "yes": "Yes",
+    "no": "No",
+    "medicalHistory": "Medical History",
+    "analyze": "Analyze X-Ray",
+    "result": "Analysis Result",
+    "prediction": "Prediction",
+    "confidence": "Confidence",
+    "model": "Model Used",
+     "uploadError": "Please upload a valid JPEG image."
+  },
+  "curingAssessment": {
+    "title": "Recovery Assessment",
+    "subtitle": "Track your recovery progress",
+    "submit": "Submit Assessment",
+    "results": "Recovery Status",
+    "improving": "Improving",
+    "stable": "Stable",
+    "worsening": "Worsening"
+  },
+  "hospitalTracker": {
+    "title": "Nearby Hospitals",
+    "subtitle": "Find specialized pneumonia care centers near you",
+    "locate": "Find Nearby Hospitals",
+    "distance": "Distance",
+    "phone": "Phone"
+  },
+  "history": {
+    "title": "Medical History",
+    "subtitle": "Your past assessments and results",
+    "selfAssessments": "Self Assessments",
+    "xrayResults": "X-Ray Scans",
+    "curingAssessments": "Recovery Assessments",
+    "delete": "Delete",
+    "noRecords": "No records found",
+    "date": "Date"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save"
+  }
+}
