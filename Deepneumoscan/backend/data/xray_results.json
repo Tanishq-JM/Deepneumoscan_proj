@@ -1,0 +1,28 @@
+[
+  {
+    "id": "xray_001",
+    "userId": "usr_test123",
+    "imageUrl": "/uploads/sample-xray-1.jpg",
+    "age": 34,
+    "gender": "Male",
+    "smoking": false,
+    "medicalHistory": "No chronic illness",
+    "prediction": "Normal",
+    "confidence": 93.2,
+    "modelUsed": "KNN",
+    "createdAt": "2025-11-30T12:40:00.000Z"
+  },
+  {
+    "id": "xray_002",
+    "userId": "usr_test123",
+    "imageUrl": "/uploads/sample-xray-2.jpg",
+    "age": 34,
+    "gender": "Male",
+    "smoking": false,
+    "medicalHistory": "No chronic illness",
+    "prediction": "Pneumonia",
+    "confidence": 88.5,
+    "modelUsed": "SVM",
+    "createdAt": "2025-11-30T12:45:00.000Z"
+  }
+]
